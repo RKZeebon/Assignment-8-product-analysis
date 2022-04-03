@@ -1,0 +1,60 @@
+.header-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-text {
+    padding: 0 10px;
+}
+
+.headding {
+    font-size: 2.5rem;
+}
+
+.headding span {
+    font-family: 'Koulen', cursive;
+    color: teal;
+}
+
+.header-image img {
+    width: 100%;
+}
+
+.test-btn {
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: teal;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.test-btn:hover {
+    background-color: rgb(2, 71, 71);
+    text-decoration: underline;
+}
+
+
+
+
+@media only screen and (max-width: 780px) {
+    .header-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .header-text {
+        order: 2;
+    }
+
+    .header-image {
+        order: 1;
+    }
+}
