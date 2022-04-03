@@ -67,7 +67,7 @@
         top: 80px;
         background-color: teal;
         height: 100%;
-
+        z-index: 99;
         padding-left: 15px;
     }
 

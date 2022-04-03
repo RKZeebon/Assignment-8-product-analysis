@@ -1,0 +1,30 @@
+.chart-contaainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+
+}
+
+.charts {
+    margin: 50px 0;
+}
+
+.chart-title {
+    color: teal;
+    font-family: 'Chakra Petch', sans-serif;
+    text-align: center;
+    margin-bottom: 25px;
+
+}
+
+.chart-data {
+    margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 860px) {
+    .chart-contaainer {
+        display: block;
+
+    }
+}
