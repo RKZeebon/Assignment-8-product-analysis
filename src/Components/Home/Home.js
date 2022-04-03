@@ -2,10 +2,13 @@ import React from 'react';
 import './Home.css'
 import image from '../../Assests/headphone.png'
 import useReviews from '../Hooks/UseReviews';
+import { useNavigate } from "react-router-dom"
+
 
 const Home = () => {
     const [reviews] = useReviews()
-    const topThreeReviews = reviews.slice(0, 5);
+    const topThreeReviews = reviews.slice(0, 3);
+    const navigate = useNavigate()
 
     return (
         <div className='container'>
@@ -31,7 +34,7 @@ const Home = () => {
                         ></ShowThreeReviews>)
                     }
                 </div>
-                <div className='reviews-btn'><button>See All Reviews</button></div>
+                <div className='reviews-btn'><button onClick={() => navigate('/reviews')}>See All Reviews</button></div>
             </div>
 
         </div >

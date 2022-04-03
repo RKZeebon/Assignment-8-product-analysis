@@ -1,0 +1,12 @@
+.all-reviews-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+@media only screen and (max-width: 860px) {
+    .all-reviews-container {
+        display: block;
+    }
+}

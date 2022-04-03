@@ -32,6 +32,7 @@
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 
 }
 
@@ -54,17 +55,19 @@
 
 .review-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
     padding: 10px;
 
 }
 
 .review {
-    border: 2px solid teal;
+    border: 5px solid teal;
     border-radius: 5px;
     padding: 5px;
     margin: 10px 10px;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -73,6 +76,10 @@
     height: 80px;
     border-radius: 50%;
     margin: 0 auto;
+}
+
+.review h2 {
+    color: teal;
 }
 
 .reviews-btn {
@@ -88,6 +95,7 @@
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 
