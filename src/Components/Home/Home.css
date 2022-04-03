@@ -40,6 +40,71 @@
     text-decoration: underline;
 }
 
+.reviews-container {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.reviews-heading {
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2rem;
+    color: teal;
+}
+
+.review-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 10px;
+
+}
+
+.review {
+    border: 2px solid teal;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 10px;
+    text-align: center;
+
+}
+
+.review img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.reviews-btn {
+    text-align: center;
+}
+
+.reviews-btn button {
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: teal;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -56,5 +121,11 @@
 
     .header-image {
         order: 1;
+    }
+
+    .review-container {
+        display: block;
+        margin-top: 10px;
+
     }
 }

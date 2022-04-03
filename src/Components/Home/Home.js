@@ -1,8 +1,12 @@
 import React from 'react';
 import './Home.css'
 import image from '../../Assests/headphone.png'
+import useReviews from '../Hooks/UseReviews';
 
 const Home = () => {
+    const [reviews] = useReviews()
+    const topThreeReviews = reviews.slice(0, 5);
+
     return (
         <div className='container'>
             <div className='header-container'>
@@ -16,8 +20,40 @@ const Home = () => {
                     <img src={image} alt="" />
                 </div>
             </div>
-        </div>
+
+            <div className='reviews-container'>
+                <h1 className='reviews-heading'>Customer Reviews</h1>
+                <div className='review-container'>
+                    {
+                        topThreeReviews.map(review => <ShowThreeReviews
+                            key={review.id}
+                            review={review}
+                        ></ShowThreeReviews>)
+                    }
+                </div>
+                <div className='reviews-btn'><button>See All Reviews</button></div>
+            </div>
+
+        </div >
     );
 };
+
+const ShowThreeReviews = (props) => {
+    const { img, name, text, rating } = props.review
+    return (
+        <div className='review'>
+            <img src={img} alt="" />
+            <h2>{name}</h2>
+            <h4>Rating: {rating}</h4>
+            <p>{text}</p>
+        </div>
+
+    )
+}
+
+
+
+
+
 
 export default Home;
