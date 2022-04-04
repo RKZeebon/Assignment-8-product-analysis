@@ -10,7 +10,7 @@ const Chart = () => {
             <div className='charts'>
                 <h1 className='chart-title'>Monthly Sell</h1>
                 <LineChart className='chart-data'
-                    width={600}
+                    width={500}
                     height={400}
                     data={data}
                     margin={{
@@ -26,7 +26,7 @@ const Chart = () => {
                     <Tooltip />
                     <Legend />
 
-                    <Line type="monotone" dataKey="sell" stroke="blue" />
+                    <Line type="monotone" dataKey="sell" stroke="teal" />
 
                 </LineChart>
             </div>
@@ -35,7 +35,7 @@ const Chart = () => {
             <div className='charts'>
                 <h1 className='chart-title'>Investment vs Revenue</h1>
                 <AreaChart className='chart-data'
-                    width={600}
+                    width={500}
                     height={400}
                     data={data}
                     margin={{
@@ -57,7 +57,7 @@ const Chart = () => {
             <div className='charts'>
                 <h1 className='chart-title'>Investment vs Revenue</h1>
                 <BarChart className='chart-data'
-                    width={600}
+                    width={500}
                     height={400}
                     data={data}
                     margin={{
