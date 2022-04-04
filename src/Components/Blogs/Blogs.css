@@ -1,0 +1,34 @@
+.questions {
+    margin: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.qna {
+    min-width: 50%;
+    width: 80%;
+    margin: 25px auto;
+    border: 5px solid teal;
+    padding: 10px;
+    min-height: 250px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 2px;
+
+}
+
+.question {
+    margin-bottom: 10px;
+}
+
+.ans {
+    line-height: 1.5rem;
+}
+
+
+@media only screen and (max-width: 780px) {
+    .questions {
+        display: block;
+
+    }
+
+}
